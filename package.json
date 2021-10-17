@@ -1,0 +1,17 @@
+{
+  "name": "web-mern-app",
+  "version": "0.0.1",
+  "description": "Backend para la web realizada con el stack MERN",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "MERN"
+  ],
+  "author": "Alvaro Calderon <alvacalderon99@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.13"
+  }
+}
