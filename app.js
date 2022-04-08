@@ -5,6 +5,9 @@ const cors = require('cors');
 const app = express()
 const { API_VERSION } = require('./config')
 
+// Configure Header HTTP
+app.use(cors());
+
 // Load routings
 const authRoutes = require('./routers/auth')
 const userRoutes = require('./routers/user')
@@ -17,8 +20,7 @@ const postRoutes = require('./routers/post')
 //app.use(bodyParser.json())
 app.use( express.json() );
 
-// Configure Header HTTP
-app.use(cors());
+
 
 app.use((req, res, next) => {
     res.header("Access-Control-Allow-Origin", "*");
